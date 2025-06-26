@@ -2,19 +2,26 @@ module.exports = {
   // BIP39 mnemonic phrase
   MNEMONIC: "",
   // INFURA API key
-  INFURA_KEY: "",
-  // FiatTokenProxy admin - can upgrade implementation contract
+  INFURA_KEY:
+    "undefined",
+  // FiatTokenProxy admin - can upgrade implementation contract MNEMONIC[2]
   PROXY_ADMIN_ADDRESS: "",
-  // Owner - can configure master minter, pauser, and blacklister
+  // Owner - can configure master minter, pauser, and blacklister MNEMONIC[0]
   OWNER_ADDRESS: "",
-  // Master Minter - can configure minters and minter allowance
+  // Master Minter - can configure minters and minter allowance MNEMONIC[0]
   MASTERMINTER_ADDRESS: "",
+  // FiatTokenProxy admin - can upgrade implementation contract
+  PROXY_ADMIN_ADDRESS_FINAL: "",
+  // Owner - can configure master minter, pauser, and blacklister
+  OWNER_ADDRESS_FINAL: "",
+  // Master Minter - can configure minters and minter allowance
+  MASTERMINTER_ADDRESS_FINAL: "",
   // Pauser - can pause the contract
   PAUSER_ADDRESS: "",
   // Blacklister - can blacklist addresses
   BLACKLISTER_ADDRESS: "",
   // FiatTokenProxy contract - override the contract address used in migrations
   PROXY_CONTRACT_ADDRESS: "",
-  // LostAndFound - tokens that were locked in the contract are sent to this
+  // LostAndFound - tokens that were locked in the contract are sent to this SAME AS OWNER_ADDRESS_FINAL
   LOST_AND_FOUND_ADDRESS: "",
 };
